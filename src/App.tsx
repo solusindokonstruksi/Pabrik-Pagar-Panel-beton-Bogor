@@ -99,8 +99,8 @@ export default function App() {
       <header className="relative flex min-h-[90vh] items-center justify-center overflow-hidden bg-hero-gradient pt-20">
         <div className="absolute inset-0 opacity-20">
           <img 
-            src="https://picsum.photos/seed/construction-site/1920/1080" 
-            alt="Pabrik Pagar Panel Beton Bogor" 
+            src="https://i0.wp.com/skgroup.co.id/wp-content/uploads/2025/02/Harga-Beton-Ready-Mix-Cor-Murah-Per-M3-2025-4.png?w=1920&ssl=1" 
+            alt="Pagar Panel Beton Terpasang Bogor" 
             className="h-full w-full object-cover grayscale"
             referrerPolicy="no-referrer"
           />
@@ -113,9 +113,15 @@ export default function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="mb-4 inline-flex items-center gap-2 rounded bg-app-accent/10 px-3 py-1 text-[11px] font-bold tracking-[2px] text-app-accent uppercase outline outline-1 outline-app-accent/20">
-                <Construction size={14} />
-                Produsen Langsung Bogor
+              <div className="mb-4 flex flex-wrap gap-3">
+                <div className="inline-flex items-center gap-2 rounded bg-app-accent/10 px-3 py-1 text-[11px] font-bold tracking-[2px] text-app-accent uppercase outline outline-1 outline-app-accent/20">
+                  <Construction size={14} />
+                  Produsen Langsung Bogor
+                </div>
+                <div className="inline-flex items-center gap-2 rounded bg-white/5 px-3 py-1 text-[11px] font-bold tracking-[2px] text-white uppercase outline outline-1 outline-white/20 backdrop-blur-sm">
+                  <ShieldCheck size={14} className="text-app-accent" />
+                  SNI Standard Kualitas
+                </div>
               </div>
               <h1 className="font-display text-4xl font-black leading-[1.1] text-white sm:text-6xl lg:text-7xl">
                 Pabrik Pagar Panel Beton Bogor <br />
@@ -257,7 +263,7 @@ export default function App() {
             <div className="order-1 lg:order-2 relative">
               <div className="aspect-[4/3] overflow-hidden rounded-2xl border border-app-border bg-app-card p-2 shadow-2xl">
                 <img 
-                  src="https://picsum.photos/seed/precast-concrete/800/600" 
+                  src="https://i0.wp.com/skgroup.co.id/wp-content/uploads/2025/02/Harga-Beton-Ready-Mix-Cor-Murah-Per-M3-2025-4.png?w=1920&ssl=1" 
                   alt="Detail Pagar Panel Beton" 
                   className="h-full w-full rounded-xl object-cover grayscale opacity-70"
                   referrerPolicy="no-referrer"
@@ -307,9 +313,19 @@ export default function App() {
               <div>
                 <span className="text-app-accent font-bold text-[11px] uppercase tracking-[2px] mb-4 block">Hubungi Pabrik Kami</span>
                 <div className="text-4xl font-extrabold text-white mb-2 font-display tracking-tight">0812-9229-3393</div>
-                <div className="text-sm text-app-muted mb-8 italic">Jl. Raya Bogor - Sukabumi KM 15, Bogor.</div>
-                <div className="flex h-32 w-full items-center justify-center rounded-xl bg-app-card border-2 border-dashed border-app-border font-bold text-[10px] text-app-muted uppercase tracking-widest">
-                  View Factory Map Location
+                <div className="text-sm text-app-muted mb-8 italic">Jl. Raya Narogong Kp Walahir No.130, RT.11/RW.006, Nambo, Kec. Klapanunggal, Kabupaten Bogor, Jawa Barat 16710</div>
+                <div className="overflow-hidden rounded-xl border border-app-border bg-app-card shadow-2xl">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63435.969436023544!2d106.9189151517496!3d-6.426402252461863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69bf0d754f43ad%3A0xab2a35c0da5436a!2sCV.%20Solusindo%20Konstruksi!5e0!3m2!1sid!2sid!4v1776677572811!5m2!1sid!2sid" 
+                    width="100%" 
+                    height="280" 
+                    style={{ border: 0 }} 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Lokasi CV. Solusindo Konstruksi"
+                    className="grayscale invert opacity-70 hover:opacity-100 transition-opacity duration-500"
+                  ></iframe>
                 </div>
               </div>
            </div>
