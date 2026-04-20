@@ -32,20 +32,20 @@ export default function App() {
       {/* Navigation */}
       <nav className={`fixed top-0 z-50 w-full transition-all duration-300 ${scrolled ? "border-b border-app-border bg-app-bg/95 py-3 shadow-2xl backdrop-blur-md" : "bg-transparent py-5"}`}>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2">
+          <a href="https://pabrik-pagar-panel-beton-bogor.vercel.app/" className="flex items-center gap-2 transition-transform hover:scale-105">
             <div className="flex h-10 w-10 items-center justify-center rounded bg-app-accent font-display font-bold text-slate-950">
               ■
             </div>
             <span className="font-display text-xl font-bold tracking-tight text-white uppercase">
               SOKON <span className="text-app-accent">PRECAST</span>
             </span>
-          </div>
+          </a>
 
           <div className="hidden items-center gap-8 md:flex">
-            {["Keunggulan", "Produk", "Area Layanan", "Testimoni"].map((item) => (
+            {["Home", "Keunggulan", "Produk", "Area Layanan", "Testimoni"].map((item) => (
               <a 
                 key={item} 
-                href={`#${item.toLowerCase().replace(" ", "-")}`} 
+                href={item === "Home" ? "https://pabrik-pagar-panel-beton-bogor.vercel.app/" : `#${item.toLowerCase().replace(" ", "-")}`} 
                 className="text-sm font-semibold text-app-muted transition-colors hover:text-app-accent"
               >
                 {item}
@@ -73,10 +73,10 @@ export default function App() {
             className="absolute left-0 top-full w-full border-b border-app-border bg-app-card p-4 shadow-xl md:hidden"
           >
             <div className="flex flex-col gap-4">
-              {["Keunggulan", "Produk", "Area Layanan", "Testimoni"].map((item) => (
+              {["Home", "Keunggulan", "Produk", "Area Layanan", "Testimoni"].map((item) => (
                 <a 
                   key={item} 
-                  href={`#${item.toLowerCase().replace(" ", "-")}`} 
+                  href={item === "Home" ? "https://pabrik-pagar-panel-beton-bogor.vercel.app/" : `#${item.toLowerCase().replace(" ", "-")}`} 
                   className="text-lg font-medium text-app-text"
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -290,7 +290,7 @@ export default function App() {
            </div>
 
            <div className="grid gap-12 lg:grid-cols-2 items-center">
-              <div className="rounded-2xl border border-app-border bg-app-card p-12 relative overflow-hidden group">
+              <div id="testimoni" className="rounded-2xl border border-app-border bg-app-card p-12 relative overflow-hidden group">
                 <div className="relative z-10">
                   <span className="text-app-accent font-bold text-[11px] uppercase tracking-[2px] mb-3 block">Testimoni Real</span>
                   <p className="text-lg italic text-app-muted leading-relaxed mb-6 border-l-2 border-app-accent pl-6">
