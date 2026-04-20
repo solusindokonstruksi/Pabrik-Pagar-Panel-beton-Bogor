@@ -13,6 +13,7 @@ import {
   X
 } from "lucide-react";
 import { useState, useEffect } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const WHATSAPP_NUMBER = "6281292293393";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20Sokon%20Precast,%20saya%20tertarik%20dengan%20pagar%20panel%20beton.%20Bisa%20minta%20info%20harga?`;
@@ -365,6 +366,9 @@ export default function App() {
         <span className="text-sm">💬 Hubungi Admin</span>
         <div className="absolute inset-0 rounded-full animate-ping bg-[#25d366] opacity-20 -z-10"></div>
       </a>
+
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 }
